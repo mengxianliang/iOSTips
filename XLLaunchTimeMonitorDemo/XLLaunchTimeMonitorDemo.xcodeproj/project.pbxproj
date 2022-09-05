@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E6C367628C5F70E00C8E980 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C367528C5F70E00C8E980 /* AppDelegate.m */; };
+		5E6C367928C5F70E00C8E980 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C367828C5F70E00C8E980 /* SceneDelegate.m */; };
+		5E6C367C28C5F70E00C8E980 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C367B28C5F70E00C8E980 /* ViewController.m */; };
+		5E6C367F28C5F70E00C8E980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E6C367D28C5F70E00C8E980 /* Main.storyboard */; };
+		5E6C368128C5F71000C8E980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E6C368028C5F71000C8E980 /* Assets.xcassets */; };
+		5E6C368428C5F71000C8E980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E6C368228C5F71000C8E980 /* LaunchScreen.storyboard */; };
+		5E6C368728C5F71000C8E980 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C368628C5F71000C8E980 /* main.m */; };
+		5E6C369028C5F77800C8E980 /* XLLaunchTimeMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C368F28C5F77800C8E980 /* XLLaunchTimeMonitor.m */; };
+		5E6C369328C5F8DA00C8E980 /* BSBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C369228C5F8DA00C8E980 /* BSBacktraceLogger.m */; };
+		5E6C36B328C5FBC300C8E980 /* SMCallStackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C369628C5FBC300C8E980 /* SMCallStackModel.m */; };
+		5E6C36B828C5FBC300C8E980 /* SMCallTraceTimeCostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C36A228C5FBC300C8E980 /* SMCallTraceTimeCostModel.m */; };
+		5E6C36BA28C5FBC300C8E980 /* SMCallTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C36A628C5FBC300C8E980 /* SMCallTrace.m */; };
+		5E6C36BD28C5FBC300C8E980 /* SMCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C36AA28C5FBC300C8E980 /* SMCallStack.m */; };
+		5E6C36BF28C5FBC300C8E980 /* SMCallTraceCore.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C36AE28C5FBC300C8E980 /* SMCallTraceCore.c */; };
+		5E6C36C028C5FBC300C8E980 /* SMCallLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C36B028C5FBC300C8E980 /* SMCallLib.m */; };
+		5E6C36C428C5FE0D00C8E980 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C36C328C5FE0D00C8E980 /* fishhook.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E6C367128C5F70E00C8E980 /* XLLaunchTimeMonitorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLLaunchTimeMonitorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E6C367428C5F70E00C8E980 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5E6C367528C5F70E00C8E980 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E6C367728C5F70E00C8E980 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		5E6C367828C5F70E00C8E980 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		5E6C367A28C5F70E00C8E980 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5E6C367B28C5F70E00C8E980 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5E6C367E28C5F70E00C8E980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E6C368028C5F71000C8E980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E6C368328C5F71000C8E980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E6C368528C5F71000C8E980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E6C368628C5F71000C8E980 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E6C368E28C5F77800C8E980 /* XLLaunchTimeMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLLaunchTimeMonitor.h; sourceTree = "<group>"; };
+		5E6C368F28C5F77800C8E980 /* XLLaunchTimeMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLLaunchTimeMonitor.m; sourceTree = "<group>"; };
+		5E6C369128C5F8DA00C8E980 /* BSBacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBacktraceLogger.h; sourceTree = "<group>"; };
+		5E6C369228C5F8DA00C8E980 /* BSBacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBacktraceLogger.m; sourceTree = "<group>"; };
+		5E6C369628C5FBC300C8E980 /* SMCallStackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallStackModel.m; sourceTree = "<group>"; };
+		5E6C369728C5FBC300C8E980 /* SMCallTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallTrace.h; sourceTree = "<group>"; };
+		5E6C369B28C5FBC300C8E980 /* SMCallStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallStack.h; sourceTree = "<group>"; };
+		5E6C369E28C5FBC300C8E980 /* SMCallTraceCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallTraceCore.h; sourceTree = "<group>"; };
+		5E6C36A228C5FBC300C8E980 /* SMCallTraceTimeCostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallTraceTimeCostModel.m; sourceTree = "<group>"; };
+		5E6C36A328C5FBC300C8E980 /* SMCallLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallLib.h; sourceTree = "<group>"; };
+		5E6C36A628C5FBC300C8E980 /* SMCallTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallTrace.m; sourceTree = "<group>"; };
+		5E6C36A728C5FBC300C8E980 /* SMCallStackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallStackModel.h; sourceTree = "<group>"; };
+		5E6C36AA28C5FBC300C8E980 /* SMCallStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallStack.m; sourceTree = "<group>"; };
+		5E6C36AE28C5FBC300C8E980 /* SMCallTraceCore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SMCallTraceCore.c; sourceTree = "<group>"; };
+		5E6C36B028C5FBC300C8E980 /* SMCallLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallLib.m; sourceTree = "<group>"; };
+		5E6C36B128C5FBC300C8E980 /* SMCallTraceTimeCostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallTraceTimeCostModel.h; sourceTree = "<group>"; };
+		5E6C36C228C5FE0D00C8E980 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		5E6C36C328C5FE0D00C8E980 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E6C366E28C5F70E00C8E980 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E6C366828C5F70E00C8E980 = {
+			isa = PBXGroup;
+			children = (
+				5E6C369428C5FBC300C8E980 /* SMLagMonitor */,
+				5E6C368D28C5F74400C8E980 /* XLLauchTimeMotnitor */,
+				5E6C367328C5F70E00C8E980 /* XLLaunchTimeMonitorDemo */,
+				5E6C367228C5F70E00C8E980 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E6C367228C5F70E00C8E980 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E6C367128C5F70E00C8E980 /* XLLaunchTimeMonitorDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E6C367328C5F70E00C8E980 /* XLLaunchTimeMonitorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5E6C367428C5F70E00C8E980 /* AppDelegate.h */,
+				5E6C367528C5F70E00C8E980 /* AppDelegate.m */,
+				5E6C367728C5F70E00C8E980 /* SceneDelegate.h */,
+				5E6C367828C5F70E00C8E980 /* SceneDelegate.m */,
+				5E6C367A28C5F70E00C8E980 /* ViewController.h */,
+				5E6C367B28C5F70E00C8E980 /* ViewController.m */,
+				5E6C367D28C5F70E00C8E980 /* Main.storyboard */,
+				5E6C368028C5F71000C8E980 /* Assets.xcassets */,
+				5E6C368228C5F71000C8E980 /* LaunchScreen.storyboard */,
+				5E6C368528C5F71000C8E980 /* Info.plist */,
+				5E6C368628C5F71000C8E980 /* main.m */,
+			);
+			path = XLLaunchTimeMonitorDemo;
+			sourceTree = "<group>";
+		};
+		5E6C368D28C5F74400C8E980 /* XLLauchTimeMotnitor */ = {
+			isa = PBXGroup;
+			children = (
+				5E6C369128C5F8DA00C8E980 /* BSBacktraceLogger.h */,
+				5E6C369228C5F8DA00C8E980 /* BSBacktraceLogger.m */,
+				5E6C368E28C5F77800C8E980 /* XLLaunchTimeMonitor.h */,
+				5E6C368F28C5F77800C8E980 /* XLLaunchTimeMonitor.m */,
+			);
+			path = XLLauchTimeMotnitor;
+			sourceTree = "<group>";
+		};
+		5E6C369428C5FBC300C8E980 /* SMLagMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				5E6C36C328C5FE0D00C8E980 /* fishhook.c */,
+				5E6C36C228C5FE0D00C8E980 /* fishhook.h */,
+				5E6C36A328C5FBC300C8E980 /* SMCallLib.h */,
+				5E6C36B028C5FBC300C8E980 /* SMCallLib.m */,
+				5E6C369B28C5FBC300C8E980 /* SMCallStack.h */,
+				5E6C36AA28C5FBC300C8E980 /* SMCallStack.m */,
+				5E6C36A728C5FBC300C8E980 /* SMCallStackModel.h */,
+				5E6C369628C5FBC300C8E980 /* SMCallStackModel.m */,
+				5E6C369728C5FBC300C8E980 /* SMCallTrace.h */,
+				5E6C36A628C5FBC300C8E980 /* SMCallTrace.m */,
+				5E6C369E28C5FBC300C8E980 /* SMCallTraceCore.h */,
+				5E6C36AE28C5FBC300C8E980 /* SMCallTraceCore.c */,
+				5E6C36B128C5FBC300C8E980 /* SMCallTraceTimeCostModel.h */,
+				5E6C36A228C5FBC300C8E980 /* SMCallTraceTimeCostModel.m */,
+			);
+			path = SMLagMonitor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E6C367028C5F70E00C8E980 /* XLLaunchTimeMonitorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E6C368A28C5F71000C8E980 /* Build configuration list for PBXNativeTarget "XLLaunchTimeMonitorDemo" */;
+			buildPhases = (
+				5E6C366D28C5F70E00C8E980 /* Sources */,
+				5E6C366E28C5F70E00C8E980 /* Frameworks */,
+				5E6C366F28C5F70E00C8E980 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XLLaunchTimeMonitorDemo;
+			productName = XLLaunchTimeMonitorDemo;
+			productReference = 5E6C367128C5F70E00C8E980 /* XLLaunchTimeMonitorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E6C366928C5F70E00C8E980 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					5E6C367028C5F70E00C8E980 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 5E6C366C28C5F70E00C8E980 /* Build configuration list for PBXProject "XLLaunchTimeMonitorDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E6C366828C5F70E00C8E980;
+			productRefGroup = 5E6C367228C5F70E00C8E980 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E6C367028C5F70E00C8E980 /* XLLaunchTimeMonitorDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E6C366F28C5F70E00C8E980 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E6C368428C5F71000C8E980 /* LaunchScreen.storyboard in Resources */,
+				5E6C368128C5F71000C8E980 /* Assets.xcassets in Resources */,
+				5E6C367F28C5F70E00C8E980 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E6C366D28C5F70E00C8E980 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E6C36B828C5FBC300C8E980 /* SMCallTraceTimeCostModel.m in Sources */,
+				5E6C367C28C5F70E00C8E980 /* ViewController.m in Sources */,
+				5E6C367628C5F70E00C8E980 /* AppDelegate.m in Sources */,
+				5E6C36BF28C5FBC300C8E980 /* SMCallTraceCore.c in Sources */,
+				5E6C36BD28C5FBC300C8E980 /* SMCallStack.m in Sources */,
+				5E6C36BA28C5FBC300C8E980 /* SMCallTrace.m in Sources */,
+				5E6C36C028C5FBC300C8E980 /* SMCallLib.m in Sources */,
+				5E6C36B328C5FBC300C8E980 /* SMCallStackModel.m in Sources */,
+				5E6C369028C5F77800C8E980 /* XLLaunchTimeMonitor.m in Sources */,
+				5E6C369328C5F8DA00C8E980 /* BSBacktraceLogger.m in Sources */,
+				5E6C368728C5F71000C8E980 /* main.m in Sources */,
+				5E6C367928C5F70E00C8E980 /* SceneDelegate.m in Sources */,
+				5E6C36C428C5FE0D00C8E980 /* fishhook.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5E6C367D28C5F70E00C8E980 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E6C367E28C5F70E00C8E980 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E6C368228C5F71000C8E980 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E6C368328C5F71000C8E980 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E6C368828C5F71000C8E980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5E6C368928C5F71000C8E980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E6C368B28C5F71000C8E980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9PL68U2V83;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XLLaunchTimeMonitorDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xl.XLLaunchTimeMonitorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E6C368C28C5F71000C8E980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9PL68U2V83;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XLLaunchTimeMonitorDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xl.XLLaunchTimeMonitorDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E6C366C28C5F70E00C8E980 /* Build configuration list for PBXProject "XLLaunchTimeMonitorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E6C368828C5F71000C8E980 /* Debug */,
+				5E6C368928C5F71000C8E980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E6C368A28C5F71000C8E980 /* Build configuration list for PBXNativeTarget "XLLaunchTimeMonitorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E6C368B28C5F71000C8E980 /* Debug */,
+				5E6C368C28C5F71000C8E980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E6C366928C5F70E00C8E980 /* Project object */;
+}
