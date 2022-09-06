@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "SMCallTraceCore.h"
 
-
 @interface SMCallTrace : NSObject
 + (void)start; //开始记录
 + (void)startWithMaxDepth:(int)depth;

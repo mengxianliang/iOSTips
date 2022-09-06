@@ -16,12 +16,9 @@
 		5E6C368728C5F71000C8E980 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C368628C5F71000C8E980 /* main.m */; };
 		5E6C369028C5F77800C8E980 /* XLLaunchTimeMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C368F28C5F77800C8E980 /* XLLaunchTimeMonitor.m */; };
 		5E6C369328C5F8DA00C8E980 /* BSBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C369228C5F8DA00C8E980 /* BSBacktraceLogger.m */; };
-		5E6C36B328C5FBC300C8E980 /* SMCallStackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C369628C5FBC300C8E980 /* SMCallStackModel.m */; };
 		5E6C36B828C5FBC300C8E980 /* SMCallTraceTimeCostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C36A228C5FBC300C8E980 /* SMCallTraceTimeCostModel.m */; };
 		5E6C36BA28C5FBC300C8E980 /* SMCallTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C36A628C5FBC300C8E980 /* SMCallTrace.m */; };
-		5E6C36BD28C5FBC300C8E980 /* SMCallStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C36AA28C5FBC300C8E980 /* SMCallStack.m */; };
 		5E6C36BF28C5FBC300C8E980 /* SMCallTraceCore.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C36AE28C5FBC300C8E980 /* SMCallTraceCore.c */; };
-		5E6C36C028C5FBC300C8E980 /* SMCallLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C36B028C5FBC300C8E980 /* SMCallLib.m */; };
 		5E6C36C428C5FE0D00C8E980 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C36C328C5FE0D00C8E980 /* fishhook.c */; };
 /* End PBXBuildFile section */
 
@@ -42,17 +39,11 @@
 		5E6C368F28C5F77800C8E980 /* XLLaunchTimeMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLLaunchTimeMonitor.m; sourceTree = "<group>"; };
 		5E6C369128C5F8DA00C8E980 /* BSBacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSBacktraceLogger.h; sourceTree = "<group>"; };
 		5E6C369228C5F8DA00C8E980 /* BSBacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSBacktraceLogger.m; sourceTree = "<group>"; };
-		5E6C369628C5FBC300C8E980 /* SMCallStackModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallStackModel.m; sourceTree = "<group>"; };
 		5E6C369728C5FBC300C8E980 /* SMCallTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallTrace.h; sourceTree = "<group>"; };
-		5E6C369B28C5FBC300C8E980 /* SMCallStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallStack.h; sourceTree = "<group>"; };
 		5E6C369E28C5FBC300C8E980 /* SMCallTraceCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallTraceCore.h; sourceTree = "<group>"; };
 		5E6C36A228C5FBC300C8E980 /* SMCallTraceTimeCostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallTraceTimeCostModel.m; sourceTree = "<group>"; };
-		5E6C36A328C5FBC300C8E980 /* SMCallLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallLib.h; sourceTree = "<group>"; };
 		5E6C36A628C5FBC300C8E980 /* SMCallTrace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallTrace.m; sourceTree = "<group>"; };
-		5E6C36A728C5FBC300C8E980 /* SMCallStackModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallStackModel.h; sourceTree = "<group>"; };
-		5E6C36AA28C5FBC300C8E980 /* SMCallStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallStack.m; sourceTree = "<group>"; };
 		5E6C36AE28C5FBC300C8E980 /* SMCallTraceCore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SMCallTraceCore.c; sourceTree = "<group>"; };
-		5E6C36B028C5FBC300C8E980 /* SMCallLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCallLib.m; sourceTree = "<group>"; };
 		5E6C36B128C5FBC300C8E980 /* SMCallTraceTimeCostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCallTraceTimeCostModel.h; sourceTree = "<group>"; };
 		5E6C36C228C5FE0D00C8E980 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		5E6C36C328C5FE0D00C8E980 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
@@ -72,7 +63,7 @@
 		5E6C366828C5F70E00C8E980 = {
 			isa = PBXGroup;
 			children = (
-				5E6C369428C5FBC300C8E980 /* SMLagMonitor */,
+				5E6C369428C5FBC300C8E980 /* SMCallTrace */,
 				5E6C368D28C5F74400C8E980 /* XLLauchTimeMotnitor */,
 				5E6C367328C5F70E00C8E980 /* XLLaunchTimeMonitorDemo */,
 				5E6C367228C5F70E00C8E980 /* Products */,
@@ -116,17 +107,11 @@
 			path = XLLauchTimeMotnitor;
 			sourceTree = "<group>";
 		};
-		5E6C369428C5FBC300C8E980 /* SMLagMonitor */ = {
+		5E6C369428C5FBC300C8E980 /* SMCallTrace */ = {
 			isa = PBXGroup;
 			children = (
-				5E6C36C328C5FE0D00C8E980 /* fishhook.c */,
 				5E6C36C228C5FE0D00C8E980 /* fishhook.h */,
-				5E6C36A328C5FBC300C8E980 /* SMCallLib.h */,
-				5E6C36B028C5FBC300C8E980 /* SMCallLib.m */,
-				5E6C369B28C5FBC300C8E980 /* SMCallStack.h */,
-				5E6C36AA28C5FBC300C8E980 /* SMCallStack.m */,
-				5E6C36A728C5FBC300C8E980 /* SMCallStackModel.h */,
-				5E6C369628C5FBC300C8E980 /* SMCallStackModel.m */,
+				5E6C36C328C5FE0D00C8E980 /* fishhook.c */,
 				5E6C369728C5FBC300C8E980 /* SMCallTrace.h */,
 				5E6C36A628C5FBC300C8E980 /* SMCallTrace.m */,
 				5E6C369E28C5FBC300C8E980 /* SMCallTraceCore.h */,
@@ -134,7 +119,7 @@
 				5E6C36B128C5FBC300C8E980 /* SMCallTraceTimeCostModel.h */,
 				5E6C36A228C5FBC300C8E980 /* SMCallTraceTimeCostModel.m */,
 			);
-			path = SMLagMonitor;
+			path = SMCallTrace;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,10 +196,7 @@
 				5E6C367C28C5F70E00C8E980 /* ViewController.m in Sources */,
 				5E6C367628C5F70E00C8E980 /* AppDelegate.m in Sources */,
 				5E6C36BF28C5FBC300C8E980 /* SMCallTraceCore.c in Sources */,
-				5E6C36BD28C5FBC300C8E980 /* SMCallStack.m in Sources */,
 				5E6C36BA28C5FBC300C8E980 /* SMCallTrace.m in Sources */,
-				5E6C36C028C5FBC300C8E980 /* SMCallLib.m in Sources */,
-				5E6C36B328C5FBC300C8E980 /* SMCallStackModel.m in Sources */,
 				5E6C369028C5F77800C8E980 /* XLLaunchTimeMonitor.m in Sources */,
 				5E6C369328C5F8DA00C8E980 /* BSBacktraceLogger.m in Sources */,
 				5E6C368728C5F71000C8E980 /* main.m in Sources */,

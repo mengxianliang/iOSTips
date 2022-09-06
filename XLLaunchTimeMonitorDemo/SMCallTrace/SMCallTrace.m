@@ -7,10 +7,8 @@
 //
 
 #import "SMCallTrace.h"
-#import "SMCallLib.h"
+#include <objc/runtime.h>
 #import "SMCallTraceTimeCostModel.h"
-//#import "SMLagDB.h"
-
 
 @implementation SMCallTrace
 
@@ -43,7 +41,7 @@
         model.path = [NSString stringWithFormat:@"[%@ %@]",model.className,model.methodName];
         [self appendRecord:model to:mStr];
     }
-    NSLog(@"%@",mStr);
+    NSLog(@"\n%@",mStr);
 }
 + (void)stopSaveAndClean {
     [SMCallTrace stop];
