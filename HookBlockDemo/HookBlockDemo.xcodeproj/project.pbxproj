@@ -16,6 +16,8 @@
 		5E6C370928C74F6F00C8E980 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C370828C74F6F00C8E980 /* main.m */; };
 		5E6C371428C824C400C8E980 /* Question1.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C371328C824C400C8E980 /* Question1.m */; };
 		5E6C371728C825D900C8E980 /* Question2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C371628C825D900C8E980 /* Question2.m */; };
+		5E6C371D28C86DA600C8E980 /* Question3.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C371C28C86DA600C8E980 /* Question3.m */; };
+		5E6C372328C887F300C8E980 /* NSObject+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C372228C887F300C8E980 /* NSObject+Block.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,11 @@
 		5E6C371328C824C400C8E980 /* Question1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Question1.m; sourceTree = "<group>"; };
 		5E6C371528C825D900C8E980 /* Question2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question2.h; sourceTree = "<group>"; };
 		5E6C371628C825D900C8E980 /* Question2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Question2.m; sourceTree = "<group>"; };
+		5E6C371B28C86DA600C8E980 /* Question3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question3.h; sourceTree = "<group>"; };
+		5E6C371C28C86DA600C8E980 /* Question3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Question3.m; sourceTree = "<group>"; };
+		5E6C372028C885A200C8E980 /* Block_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Block_Private.h; sourceTree = "<group>"; };
+		5E6C372128C887F300C8E980 /* NSObject+Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Block.h"; sourceTree = "<group>"; };
+		5E6C372228C887F300C8E980 /* NSObject+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Block.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +84,11 @@
 				5E6C371328C824C400C8E980 /* Question1.m */,
 				5E6C371528C825D900C8E980 /* Question2.h */,
 				5E6C371628C825D900C8E980 /* Question2.m */,
+				5E6C371B28C86DA600C8E980 /* Question3.h */,
+				5E6C371C28C86DA600C8E980 /* Question3.m */,
+				5E6C372028C885A200C8E980 /* Block_Private.h */,
+				5E6C372128C887F300C8E980 /* NSObject+Block.h */,
+				5E6C372228C887F300C8E980 /* NSObject+Block.m */,
 				5E6C36FF28C74F6D00C8E980 /* Main.storyboard */,
 				5E6C370228C74F6F00C8E980 /* Assets.xcassets */,
 				5E6C370428C74F6F00C8E980 /* LaunchScreen.storyboard */,
@@ -157,11 +169,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E6C36FE28C74F6D00C8E980 /* ViewController.m in Sources */,
+				5E6C372328C887F300C8E980 /* NSObject+Block.m in Sources */,
 				5E6C371428C824C400C8E980 /* Question1.m in Sources */,
 				5E6C36F828C74F6D00C8E980 /* AppDelegate.m in Sources */,
 				5E6C370928C74F6F00C8E980 /* main.m in Sources */,
 				5E6C371728C825D900C8E980 /* Question2.m in Sources */,
 				5E6C36FB28C74F6D00C8E980 /* SceneDelegate.m in Sources */,
+				5E6C371D28C86DA600C8E980 /* Question3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +326,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,7 +354,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
