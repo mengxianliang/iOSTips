@@ -50,22 +50,16 @@ static double TimerInterval = 0.01;
     self.launchTime = [[NSDate date] timeIntervalSinceDate:self.startDate];
 }
 
+// 添加定时器
 - (void)startTimer {
-    // 获取队列
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
-    // 创建定时器
     dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
-    // 设置开始时间
     dispatch_time_t start = dispatch_time(DISPATCH_TIME_NOW, 0);
-    // 设置定时器，参数：1、timer 2、开始时间 3、间隔（纳秒） 4、误差（纳秒）
     dispatch_source_set_timer(timer, start, TimerInterval * NSEC_PER_SEC, 0 * NSEC_PER_SEC);
-    // 设置回调（block）
     dispatch_source_set_event_handler(timer, ^{
         [self updateTimerInfo];
     });
-    // 启动定时器
     dispatch_resume(timer);
-    // 保住定时器的命
     self.timer = timer;
 }
 
@@ -74,7 +68,7 @@ static double TimerInterval = 0.01;
 }
 
 - (void)updateTimerInfo {
-//    NSArray *methodNames = [NSThread callStackSymbols];
+    // 获取主线程方法堆栈中的方法名称集合
     NSArray *methodNames = [BSBacktraceLogger xl_backtraceOfMainThread];
     for (NSString *name in methodNames) {
         if ([self.timeInfo objectForKey:name] == nil) {
