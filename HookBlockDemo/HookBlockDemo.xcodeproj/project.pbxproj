@@ -18,6 +18,7 @@
 		5E6C371728C825D900C8E980 /* Question2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C371628C825D900C8E980 /* Question2.m */; };
 		5E6C371D28C86DA600C8E980 /* Question3.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C371C28C86DA600C8E980 /* Question3.m */; };
 		5E6C372328C887F300C8E980 /* NSObject+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C372228C887F300C8E980 /* NSObject+Block.m */; };
+		5EC08F4628C8C58A000A54BD /* NSObject+EveryBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC08F4528C8C58A000A54BD /* NSObject+EveryBlock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		5E6C372028C885A200C8E980 /* Block_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Block_Private.h; sourceTree = "<group>"; };
 		5E6C372128C887F300C8E980 /* NSObject+Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Block.h"; sourceTree = "<group>"; };
 		5E6C372228C887F300C8E980 /* NSObject+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Block.m"; sourceTree = "<group>"; };
+		5EC08F4428C8C58A000A54BD /* NSObject+EveryBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+EveryBlock.h"; sourceTree = "<group>"; };
+		5EC08F4528C8C58A000A54BD /* NSObject+EveryBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EveryBlock.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				5E6C372028C885A200C8E980 /* Block_Private.h */,
 				5E6C372128C887F300C8E980 /* NSObject+Block.h */,
 				5E6C372228C887F300C8E980 /* NSObject+Block.m */,
+				5EC08F4428C8C58A000A54BD /* NSObject+EveryBlock.h */,
+				5EC08F4528C8C58A000A54BD /* NSObject+EveryBlock.m */,
 				5E6C36FF28C74F6D00C8E980 /* Main.storyboard */,
 				5E6C370228C74F6F00C8E980 /* Assets.xcassets */,
 				5E6C370428C74F6F00C8E980 /* LaunchScreen.storyboard */,
@@ -174,6 +179,7 @@
 				5E6C36F828C74F6D00C8E980 /* AppDelegate.m in Sources */,
 				5E6C370928C74F6F00C8E980 /* main.m in Sources */,
 				5E6C371728C825D900C8E980 /* Question2.m in Sources */,
+				5EC08F4628C8C58A000A54BD /* NSObject+EveryBlock.m in Sources */,
 				5E6C36FB28C74F6D00C8E980 /* SceneDelegate.m in Sources */,
 				5E6C371D28C86DA600C8E980 /* Question3.m in Sources */,
 			);

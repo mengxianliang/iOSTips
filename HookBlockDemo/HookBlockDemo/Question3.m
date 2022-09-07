@@ -11,6 +11,7 @@
 #import <mach-o/getsect.h>
 #import "Block_Private.h"
 #import "NSObject+Block.h"
+#import "NSObject+EveryBlock.h"
 
 extern const struct mach_header* _NSGetMachExecuteHeader(void);
 
@@ -117,13 +118,17 @@ typedef void(^TestBlock)(int a, int b, int c);
 
 
 - (void)answer {
-    initImageTextStartAndEndPos();
-    __NSStackBlock_retain_old =(void *(*)(void*,SEL))class_replaceMethod(NSClassFromString(@"__NSStackBlock__"), sel_registerName("retain"), (IMP)__NSStackBlock_retain_new, nil);
-    __NSMallocBlock_retain_old = (void *(*)(void*,SEL))class_replaceMethod(NSClassFromString(@"__NSMallocBlock__"), sel_registerName("retain"), (IMP)__NSMallocBlock_retain_new, nil);
-    __NSGlobalBlock_retain_old = (void *(*)(void*,SEL))class_replaceMethod(NSClassFromString(@"__NSGlobalBlock__"), sel_registerName("retain"), (IMP)__NSGlobalBlock_retain_new, nil);
-//    // hook所有block
-//    HookEveryBlockToPrintArguments();
+//    initImageTextStartAndEndPos();
+//    __NSStackBlock_retain_old =(void *(*)(void*,SEL))class_replaceMethod(NSClassFromString(@"__NSStackBlock__"), sel_registerName("retain"), (IMP)__NSStackBlock_retain_new, nil);
+//    __NSMallocBlock_retain_old = (void *(*)(void*,SEL))class_replaceMethod(NSClassFromString(@"__NSMallocBlock__"), sel_registerName("retain"), (IMP)__NSMallocBlock_retain_new, nil);
+//    __NSGlobalBlock_retain_old = (void *(*)(void*,SEL))class_replaceMethod(NSClassFromString(@"__NSGlobalBlock__"), sel_registerName("retain"), (IMP)__NSGlobalBlock_retain_new, nil);
+////    // hook所有block
+////    HookEveryBlockToPrintArguments();
+//    [self start];
+    
+    HookEveryBlockToPrintArguments();
     [self start];
+    
 }
 
 
