@@ -1,5 +1,5 @@
 //
-//  NSObject+EveryBlock.h
+//  NSObject+HookEveryBlock.h
 //  HookBlockDemo
 //
 //  Created by mxl on 2022/9/7.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (EveryBlock)
+@interface NSObject (HookEveryBlock)
 
 void HookEveryBlockToPrintArguments(void);
 

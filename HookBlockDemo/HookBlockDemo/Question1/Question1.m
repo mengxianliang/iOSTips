@@ -6,27 +6,15 @@
 //
 
 #import "Question1.h"
+#import "BlockHeader.h"
 
-struct Block_descriptor {
-    void *reserved;
-    uintptr_t size;
-};
-
-struct Block_layout {
-    void *isa;
-    int32_t flags; // contains ref count
-    int32_t reserved;
-    void  *invoke;
-    struct Block_descriptor *descriptor;
-};
-
-typedef void(^VoidBlock)(void);
+typedef void(^TestBlock)(void);
 
 @implementation Question1
 
 + (void)answer {
     // 定义一个block
-    VoidBlock block = ^{
+    TestBlock block = ^{
         
     };
     // hook这个block

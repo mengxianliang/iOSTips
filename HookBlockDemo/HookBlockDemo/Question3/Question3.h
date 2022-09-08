@@ -9,11 +9,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^TestBlock)(int a, int b, int c);
+
 @interface Question3 : NSObject
 
-- (void)answer;
-
-- (void)start;
++ (void)answer;
 
 @end
 

@@ -17,8 +17,9 @@
 		5E6C371428C824C400C8E980 /* Question1.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C371328C824C400C8E980 /* Question1.m */; };
 		5E6C371728C825D900C8E980 /* Question2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C371628C825D900C8E980 /* Question2.m */; };
 		5E6C371D28C86DA600C8E980 /* Question3.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C371C28C86DA600C8E980 /* Question3.m */; };
-		5E6C372328C887F300C8E980 /* NSObject+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C372228C887F300C8E980 /* NSObject+Block.m */; };
-		5EC08F4628C8C58A000A54BD /* NSObject+EveryBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC08F4528C8C58A000A54BD /* NSObject+EveryBlock.m */; };
+		5E6C372328C887F300C8E980 /* NSObject+HookBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C372228C887F300C8E980 /* NSObject+HookBlock.m */; };
+		5EA5F06128C980CB002EE530 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EA5F06028C980CB002EE530 /* fishhook.c */; };
+		5EC08F4628C8C58A000A54BD /* NSObject+HookEveryBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC08F4528C8C58A000A54BD /* NSObject+HookEveryBlock.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,11 +41,13 @@
 		5E6C371628C825D900C8E980 /* Question2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Question2.m; sourceTree = "<group>"; };
 		5E6C371B28C86DA600C8E980 /* Question3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question3.h; sourceTree = "<group>"; };
 		5E6C371C28C86DA600C8E980 /* Question3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Question3.m; sourceTree = "<group>"; };
-		5E6C372028C885A200C8E980 /* Block_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Block_Private.h; sourceTree = "<group>"; };
-		5E6C372128C887F300C8E980 /* NSObject+Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Block.h"; sourceTree = "<group>"; };
-		5E6C372228C887F300C8E980 /* NSObject+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Block.m"; sourceTree = "<group>"; };
-		5EC08F4428C8C58A000A54BD /* NSObject+EveryBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+EveryBlock.h"; sourceTree = "<group>"; };
-		5EC08F4528C8C58A000A54BD /* NSObject+EveryBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EveryBlock.m"; sourceTree = "<group>"; };
+		5E6C372028C885A200C8E980 /* BlockHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockHeader.h; sourceTree = "<group>"; };
+		5E6C372128C887F300C8E980 /* NSObject+HookBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HookBlock.h"; sourceTree = "<group>"; };
+		5E6C372228C887F300C8E980 /* NSObject+HookBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HookBlock.m"; sourceTree = "<group>"; };
+		5EA5F05F28C980CB002EE530 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		5EA5F06028C980CB002EE530 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		5EC08F4428C8C58A000A54BD /* NSObject+HookEveryBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HookEveryBlock.h"; sourceTree = "<group>"; };
+		5EC08F4528C8C58A000A54BD /* NSObject+HookEveryBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HookEveryBlock.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,23 +80,16 @@
 		5E6C36F528C74F6D00C8E980 /* HookBlockDemo */ = {
 			isa = PBXGroup;
 			children = (
+				5E6C372028C885A200C8E980 /* BlockHeader.h */,
+				5EA5F06428C9C69B002EE530 /* Question1 */,
+				5EA5F06528C9C6AD002EE530 /* Question2 */,
+				5EA5F06628C9C798002EE530 /* Question3 */,
 				5E6C36F628C74F6D00C8E980 /* AppDelegate.h */,
 				5E6C36F728C74F6D00C8E980 /* AppDelegate.m */,
 				5E6C36F928C74F6D00C8E980 /* SceneDelegate.h */,
 				5E6C36FA28C74F6D00C8E980 /* SceneDelegate.m */,
 				5E6C36FC28C74F6D00C8E980 /* ViewController.h */,
 				5E6C36FD28C74F6D00C8E980 /* ViewController.m */,
-				5E6C371228C824C400C8E980 /* Question1.h */,
-				5E6C371328C824C400C8E980 /* Question1.m */,
-				5E6C371528C825D900C8E980 /* Question2.h */,
-				5E6C371628C825D900C8E980 /* Question2.m */,
-				5E6C371B28C86DA600C8E980 /* Question3.h */,
-				5E6C371C28C86DA600C8E980 /* Question3.m */,
-				5E6C372028C885A200C8E980 /* Block_Private.h */,
-				5E6C372128C887F300C8E980 /* NSObject+Block.h */,
-				5E6C372228C887F300C8E980 /* NSObject+Block.m */,
-				5EC08F4428C8C58A000A54BD /* NSObject+EveryBlock.h */,
-				5EC08F4528C8C58A000A54BD /* NSObject+EveryBlock.m */,
 				5E6C36FF28C74F6D00C8E980 /* Main.storyboard */,
 				5E6C370228C74F6F00C8E980 /* Assets.xcassets */,
 				5E6C370428C74F6F00C8E980 /* LaunchScreen.storyboard */,
@@ -101,6 +97,39 @@
 				5E6C370828C74F6F00C8E980 /* main.m */,
 			);
 			path = HookBlockDemo;
+			sourceTree = "<group>";
+		};
+		5EA5F06428C9C69B002EE530 /* Question1 */ = {
+			isa = PBXGroup;
+			children = (
+				5E6C371228C824C400C8E980 /* Question1.h */,
+				5E6C371328C824C400C8E980 /* Question1.m */,
+			);
+			path = Question1;
+			sourceTree = "<group>";
+		};
+		5EA5F06528C9C6AD002EE530 /* Question2 */ = {
+			isa = PBXGroup;
+			children = (
+				5E6C372128C887F300C8E980 /* NSObject+HookBlock.h */,
+				5E6C372228C887F300C8E980 /* NSObject+HookBlock.m */,
+				5E6C371528C825D900C8E980 /* Question2.h */,
+				5E6C371628C825D900C8E980 /* Question2.m */,
+			);
+			path = Question2;
+			sourceTree = "<group>";
+		};
+		5EA5F06628C9C798002EE530 /* Question3 */ = {
+			isa = PBXGroup;
+			children = (
+				5EA5F05F28C980CB002EE530 /* fishhook.h */,
+				5EA5F06028C980CB002EE530 /* fishhook.c */,
+				5EC08F4428C8C58A000A54BD /* NSObject+HookEveryBlock.h */,
+				5EC08F4528C8C58A000A54BD /* NSObject+HookEveryBlock.m */,
+				5E6C371B28C86DA600C8E980 /* Question3.h */,
+				5E6C371C28C86DA600C8E980 /* Question3.m */,
+			);
+			path = Question3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,12 +203,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E6C36FE28C74F6D00C8E980 /* ViewController.m in Sources */,
-				5E6C372328C887F300C8E980 /* NSObject+Block.m in Sources */,
+				5E6C372328C887F300C8E980 /* NSObject+HookBlock.m in Sources */,
 				5E6C371428C824C400C8E980 /* Question1.m in Sources */,
 				5E6C36F828C74F6D00C8E980 /* AppDelegate.m in Sources */,
 				5E6C370928C74F6F00C8E980 /* main.m in Sources */,
 				5E6C371728C825D900C8E980 /* Question2.m in Sources */,
-				5EC08F4628C8C58A000A54BD /* NSObject+EveryBlock.m in Sources */,
+				5EA5F06128C980CB002EE530 /* fishhook.c in Sources */,
+				5EC08F4628C8C58A000A54BD /* NSObject+HookEveryBlock.m in Sources */,
 				5E6C36FB28C74F6D00C8E980 /* SceneDelegate.m in Sources */,
 				5E6C371D28C86DA600C8E980 /* Question3.m in Sources */,
 			);
@@ -324,7 +354,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = X496RVQDTB;
+				DEVELOPMENT_TEAM = 9PL68U2V83;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HookBlockDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

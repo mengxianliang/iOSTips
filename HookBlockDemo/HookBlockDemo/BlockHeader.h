@@ -1,16 +1,15 @@
 //
-//  Block_Private.h
+//  BlockHeader.h
 //  HookBlockDemo
 //
 //  Created by mxl on 2022/9/7.
-//  Block_private.h源码
+//  数据结构来自于 Block_private.h 源码
 
 #ifndef Block_Private_h
 #define Block_Private_h
 
 typedef void(*BlockCopyFunction)(void *, const void *);
 typedef void(*BlockDisposeFunction)(const void *);
-typedef void(*BlockInvokeFunction)(void *, ...);
 
 // Values for Block_layout->flags to describe block objects
 enum {
@@ -35,7 +34,7 @@ enum {
 
 #define BLOCK_DESCRIPTOR_1 1
 struct Block_descriptor_1 {
-    uintptr_t reserved;
+    void *reserved;
     uintptr_t size;
 };
 
@@ -58,7 +57,7 @@ struct Block_layout {
     void * __ptrauth_objc_isa_pointer isa;
     volatile int32_t flags; // contains ref count
     int32_t reserved;
-    BlockInvokeFunction invoke;
+    void *invoke;
     struct Block_descriptor_1 *descriptor;
     // imported variables
 };

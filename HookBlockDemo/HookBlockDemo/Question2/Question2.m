@@ -6,7 +6,7 @@
 //
 
 #import "Question2.h"
-#import "NSObject+Block.h"
+#import "NSObject+HookBlock.h"
 
 typedef void(^TestBlock)(int a, int b, int c);
 

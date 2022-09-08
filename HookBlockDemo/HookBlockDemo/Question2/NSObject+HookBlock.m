@@ -1,63 +1,45 @@
 //
-//  NSObject+EveryBlock.m
+//  NSObject+HookBlock.m
 //  HookBlockDemo
 //
 //  Created by mxl on 2022/9/7.
 //
 
-#import "NSObject+EveryBlock.h"
-#import "Block_Private.h"
+#import "NSObject+HookBlock.h"
+#import "BlockHeader.h"
 #import <objc/message.h>
 
-
-@implementation NSObject (EveryBlock)
+@implementation NSObject (HookBlock)
 
 // hook block
-void HookEveryBlockToPrintArguments(void) {
-//    // 将block对象转换为结构体
-//    struct Block_layout *layout = (__bridge struct Block_layout *)block;
-//    // 保存原invoke
-//    layout->descriptor->reserved = (uintptr_t)layout->invoke;
-//    // 替换invoke
-//    layout->invoke = (void *)_objc_msgForward;
-//    // 替换block消息转发方法
-//    exchangeSystemForwardMethod(block);
-    exchangeRetainMethod();
-}
-
-void exchangeRetainMethod(void) {
-    Class cls = NSClassFromString(@"__NSGlobalBlock__");
-    Method method3 = class_getInstanceMethod(cls, sel_registerName("retain"));
-    Method method4 = class_getInstanceMethod(cls, @selector(xl_retain));
-    method_exchangeImplementations(method3, method4);
-}
-
-- (void)xl_retain {
-    NSLog(@"self = %@", self);
+void HookBlockToPrintArguments(id block) {
+    // 替换NSBlock消息转发方法
+    exchangeNSBlockForwardMethod();
     
-    struct Block_layout *layout = (__bridge struct Block_layout*)self;
-    unsigned long invokePos = (unsigned long)layout->invoke;
-    NSLog(@"block invokePos = %lu", invokePos);
-    exchangeSystemForwardMethod1(self);
-    
-    [self xl_retain];
+    // 将block对象转换为结构体
+    struct Block_layout *layout = (__bridge struct Block_layout *)block;
+    // 保存原invoke
+    layout->descriptor->reserved = layout->invoke;
+    // 替换invoke
+    layout->invoke = (void *)_objc_msgForward;
 }
 
-// 替换block方法
-void exchangeSystemForwardMethod1(id block) {
+// 替换NSBlock消息转发方法
+void exchangeNSBlockForwardMethod(void) {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        Class cls = [block class];
+        Class cls = NSClassFromString(@"NSBlock");
         Method method1 = class_getInstanceMethod(cls, @selector(methodSignatureForSelector:));
         Method method2 = class_getInstanceMethod(cls, @selector(xl_methodSignatureForSelector:));
         method_exchangeImplementations(method1, method2);
-
+        
         Method method3 = class_getInstanceMethod(cls, @selector(forwardInvocation:));
         Method method4 = class_getInstanceMethod(cls, @selector(xl_forwardInvocation:));
         method_exchangeImplementations(method3, method4);
     });
 }
 
+// 被替换的方法签名方法
 - (NSMethodSignature *)xl_methodSignatureForSelector:(SEL)aSelector {
     struct Block_descriptor_3 *desc3 = _Block_descriptor_3((__bridge void *)self);
     if ( desc3 == NULL ) { return nil; }
@@ -65,6 +47,7 @@ void exchangeSystemForwardMethod1(id block) {
     return signature;
 }
 
+// 被替换的消息转发方法
 - (void)xl_forwardInvocation:(NSInvocation *)anInvocation {
     struct Block_layout *layout = (__bridge struct Block_layout *)anInvocation.target;
     
@@ -78,7 +61,7 @@ void exchangeSystemForwardMethod1(id block) {
     NSLog(@"block参数: %@", argumentString);
     
     // 还原block的invoke
-    layout->invoke = (BlockInvokeFunction)layout->descriptor->reserved;
+    layout->invoke = layout->descriptor->reserved;
     // 执行block
     [anInvocation invokeWithTarget:(__bridge id _Nonnull)layout];
 }

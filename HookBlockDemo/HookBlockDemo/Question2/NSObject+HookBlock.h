@@ -1,5 +1,5 @@
 //
-//  NSObject+Block.h
+//  NSObject+HookBlock.h
 //  HookBlockDemo
 //
 //  Created by mxl on 2022/9/7.
@@ -9,9 +9,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (Block)
+@interface NSObject (HookBlock)
 
+// Hook一个block
 void HookBlockToPrintArguments(id block);
+
+// 替换NSBlock消息转发方法
+void exchangeNSBlockForwardMethod(void);
 
 @end
 

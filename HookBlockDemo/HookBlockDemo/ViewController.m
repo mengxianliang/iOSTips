@@ -26,12 +26,7 @@
 //    [Question2 answer];
     
     // 第三个问题的答案
-    [[[Question3 alloc] init] answer];
+    [Question3 answer];
 }
-
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [[[Question3 alloc] init] start];
-}
-
 
 @end
