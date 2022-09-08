@@ -6,7 +6,7 @@
 //
 
 #import "Question1.h"
-#import "BlockHeader.h"
+#import "Block.h"
 
 typedef void(^TestBlock)(void);
 
@@ -15,7 +15,7 @@ typedef void(^TestBlock)(void);
 + (void)answer {
     // 定义一个block
     TestBlock block = ^{
-        
+        NSLog(@"block执行");
     };
     // hook这个block
     HookBlockToPrintHelloWorld(block);

@@ -41,11 +41,11 @@
 		5E6C371628C825D900C8E980 /* Question2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Question2.m; sourceTree = "<group>"; };
 		5E6C371B28C86DA600C8E980 /* Question3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question3.h; sourceTree = "<group>"; };
 		5E6C371C28C86DA600C8E980 /* Question3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Question3.m; sourceTree = "<group>"; };
-		5E6C372028C885A200C8E980 /* BlockHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockHeader.h; sourceTree = "<group>"; };
 		5E6C372128C887F300C8E980 /* NSObject+HookBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HookBlock.h"; sourceTree = "<group>"; };
 		5E6C372228C887F300C8E980 /* NSObject+HookBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HookBlock.m"; sourceTree = "<group>"; };
 		5EA5F05F28C980CB002EE530 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		5EA5F06028C980CB002EE530 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		5EA5F06828C9D27A002EE530 /* Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Block.h; sourceTree = "<group>"; };
 		5EC08F4428C8C58A000A54BD /* NSObject+HookEveryBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HookEveryBlock.h"; sourceTree = "<group>"; };
 		5EC08F4528C8C58A000A54BD /* NSObject+HookEveryBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HookEveryBlock.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,7 +80,7 @@
 		5E6C36F528C74F6D00C8E980 /* HookBlockDemo */ = {
 			isa = PBXGroup;
 			children = (
-				5E6C372028C885A200C8E980 /* BlockHeader.h */,
+				5EA5F06828C9D27A002EE530 /* Block.h */,
 				5EA5F06428C9C69B002EE530 /* Question1 */,
 				5EA5F06528C9C6AD002EE530 /* Question2 */,
 				5EA5F06628C9C798002EE530 /* Question3 */,

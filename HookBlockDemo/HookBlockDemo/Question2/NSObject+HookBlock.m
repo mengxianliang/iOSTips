@@ -6,21 +6,24 @@
 //
 
 #import "NSObject+HookBlock.h"
-#import "BlockHeader.h"
+#import "Block.h"
 #import <objc/message.h>
 
 @implementation NSObject (HookBlock)
 
 // hook block
 void HookBlockToPrintArguments(id block) {
+    
     // 替换NSBlock消息转发方法
     exchangeNSBlockForwardMethod();
     
     // 将block对象转换为结构体
     struct Block_layout *layout = (__bridge struct Block_layout *)block;
+    if (layout == NULL || layout->descriptor == NULL) { return; }
+    if (layout->invoke == _objc_msgForward) { return; }
     // 保存原invoke
     layout->descriptor->reserved = layout->invoke;
-    // 替换invoke
+    // 替换invoke为_objc_msgForward
     layout->invoke = (void *)_objc_msgForward;
 }
 

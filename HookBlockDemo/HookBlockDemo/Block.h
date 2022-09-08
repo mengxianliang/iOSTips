@@ -1,12 +1,12 @@
 //
-//  BlockHeader.h
+//  Block.h
 //  HookBlockDemo
 //
-//  Created by mxl on 2022/9/7.
-//  数据结构来自于 Block_private.h 源码
+//  Created by mxl on 2022/9/8.
+//
 
-#ifndef Block_Private_h
-#define Block_Private_h
+#ifndef Block_h
+#define Block_h
 
 typedef void(*BlockCopyFunction)(void *, const void *);
 typedef void(*BlockDisposeFunction)(const void *);
@@ -62,4 +62,4 @@ struct Block_layout {
     // imported variables
 };
 
-#endif /* Block_Private_h */
+#endif /* Block_h */
