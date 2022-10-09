@@ -50,7 +50,7 @@
         // 子线程开启一个持续的循环用来进行监控
         while (YES) {
             // 通过信号量设定超时时间，如果超时，代表信号量仍然为0，即代表RunLoop没有更新状态
-            long semaphoreWait = dispatch_semaphore_wait(self->dispatchSemaphore, dispatch_time(DISPATCH_TIME_NOW, 1000*NSEC_PER_MSEC));
+            long semaphoreWait = dispatch_semaphore_wait(self->dispatchSemaphore, dispatch_time(DISPATCH_TIME_NOW, 200*NSEC_PER_MSEC));
             if (semaphoreWait != 0) { // semaphoreWait 不为0，代表超时
                 if (!self->runLoopObserver) {
                     self->dispatchSemaphore = 0;
