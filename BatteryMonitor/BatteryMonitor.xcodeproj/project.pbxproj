@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E83BE1E28F5075B00FEECDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E83BE1D28F5075B00FEECDE /* AppDelegate.m */; };
+		5E83BE2128F5075B00FEECDE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E83BE2028F5075B00FEECDE /* SceneDelegate.m */; };
+		5E83BE2428F5075B00FEECDE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E83BE2328F5075B00FEECDE /* ViewController.m */; };
+		5E83BE2728F5075B00FEECDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E83BE2528F5075B00FEECDE /* Main.storyboard */; };
+		5E83BE2928F5075C00FEECDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E83BE2828F5075C00FEECDE /* Assets.xcassets */; };
+		5E83BE2C28F5075C00FEECDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E83BE2A28F5075C00FEECDE /* LaunchScreen.storyboard */; };
+		5E83BE2F28F5075D00FEECDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E83BE2E28F5075D00FEECDE /* main.m */; };
+		5E83BE8028F5096200FEECDE /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E83BE7D28F5096200FEECDE /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E83BE1928F5075B00FEECDE /* BatteryMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E83BE1C28F5075B00FEECDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5E83BE1D28F5075B00FEECDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E83BE1F28F5075B00FEECDE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		5E83BE2028F5075B00FEECDE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		5E83BE2228F5075B00FEECDE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5E83BE2328F5075B00FEECDE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5E83BE2628F5075B00FEECDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E83BE2828F5075C00FEECDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E83BE2B28F5075C00FEECDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E83BE2D28F5075D00FEECDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E83BE2E28F5075D00FEECDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E83BE7D28F5096200FEECDE /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IOKit.framework; sourceTree = "<group>"; };
+		5E83BE7E28F5096200FEECDE /* IOPSKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPSKeys.h; sourceTree = "<group>"; };
+		5E83BE7F28F5096200FEECDE /* IOPowerSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPowerSources.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E83BE1628F5075B00FEECDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E83BE8028F5096200FEECDE /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E83BE1028F5075B00FEECDE = {
+			isa = PBXGroup;
+			children = (
+				5E83BE7C28F5096200FEECDE /* IOKit */,
+				5E83BE1B28F5075B00FEECDE /* BatteryMonitor */,
+				5E83BE1A28F5075B00FEECDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E83BE1A28F5075B00FEECDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E83BE1928F5075B00FEECDE /* BatteryMonitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E83BE1B28F5075B00FEECDE /* BatteryMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				5E83BE1C28F5075B00FEECDE /* AppDelegate.h */,
+				5E83BE1D28F5075B00FEECDE /* AppDelegate.m */,
+				5E83BE1F28F5075B00FEECDE /* SceneDelegate.h */,
+				5E83BE2028F5075B00FEECDE /* SceneDelegate.m */,
+				5E83BE2228F5075B00FEECDE /* ViewController.h */,
+				5E83BE2328F5075B00FEECDE /* ViewController.m */,
+				5E83BE2528F5075B00FEECDE /* Main.storyboard */,
+				5E83BE2828F5075C00FEECDE /* Assets.xcassets */,
+				5E83BE2A28F5075C00FEECDE /* LaunchScreen.storyboard */,
+				5E83BE2D28F5075D00FEECDE /* Info.plist */,
+				5E83BE2E28F5075D00FEECDE /* main.m */,
+			);
+			path = BatteryMonitor;
+			sourceTree = "<group>";
+		};
+		5E83BE7C28F5096200FEECDE /* IOKit */ = {
+			isa = PBXGroup;
+			children = (
+				5E83BE7D28F5096200FEECDE /* IOKit.framework */,
+				5E83BE7E28F5096200FEECDE /* IOPSKeys.h */,
+				5E83BE7F28F5096200FEECDE /* IOPowerSources.h */,
+			);
+			path = IOKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E83BE1828F5075B00FEECDE /* BatteryMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E83BE3228F5075D00FEECDE /* Build configuration list for PBXNativeTarget "BatteryMonitor" */;
+			buildPhases = (
+				5E83BE1528F5075B00FEECDE /* Sources */,
+				5E83BE1628F5075B00FEECDE /* Frameworks */,
+				5E83BE1728F5075B00FEECDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BatteryMonitor;
+			productName = BatteryMonitor;
+			productReference = 5E83BE1928F5075B00FEECDE /* BatteryMonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E83BE1128F5075B00FEECDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					5E83BE1828F5075B00FEECDE = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 5E83BE1428F5075B00FEECDE /* Build configuration list for PBXProject "BatteryMonitor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E83BE1028F5075B00FEECDE;
+			productRefGroup = 5E83BE1A28F5075B00FEECDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E83BE1828F5075B00FEECDE /* BatteryMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E83BE1728F5075B00FEECDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E83BE2C28F5075C00FEECDE /* LaunchScreen.storyboard in Resources */,
+				5E83BE2928F5075C00FEECDE /* Assets.xcassets in Resources */,
+				5E83BE2728F5075B00FEECDE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E83BE1528F5075B00FEECDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E83BE2428F5075B00FEECDE /* ViewController.m in Sources */,
+				5E83BE1E28F5075B00FEECDE /* AppDelegate.m in Sources */,
+				5E83BE2F28F5075D00FEECDE /* main.m in Sources */,
+				5E83BE2128F5075B00FEECDE /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5E83BE2528F5075B00FEECDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E83BE2628F5075B00FEECDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E83BE2A28F5075C00FEECDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E83BE2B28F5075C00FEECDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E83BE3028F5075D00FEECDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5E83BE3128F5075D00FEECDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E83BE3328F5075D00FEECDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9PL68U2V83;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IOKit",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BatteryMonitor/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xl.BatteryMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E83BE3428F5075D00FEECDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9PL68U2V83;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IOKit",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BatteryMonitor/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xl.BatteryMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E83BE1428F5075B00FEECDE /* Build configuration list for PBXProject "BatteryMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E83BE3028F5075D00FEECDE /* Debug */,
+				5E83BE3128F5075D00FEECDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E83BE3228F5075D00FEECDE /* Build configuration list for PBXNativeTarget "BatteryMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E83BE3328F5075D00FEECDE /* Debug */,
+				5E83BE3428F5075D00FEECDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E83BE1128F5075B00FEECDE /* Project object */;
+}
