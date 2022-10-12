@@ -1,0 +1,6 @@
+framework module Pods_XLAnimationDemo {
+  umbrella header "Pods-XLAnimationDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
