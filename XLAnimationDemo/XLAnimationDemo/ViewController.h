@@ -9,7 +9,5 @@
 
 @interface ViewController : UIViewController
 
-- (IBAction)slider:(id)sender;
-
 @end
 

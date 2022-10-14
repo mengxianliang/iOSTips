@@ -6,6 +6,8 @@ target 'XLAnimationDemo' do
   use_frameworks!
 
   pod 'lottie-ios', '~> 2.5.3'
+  pod 'pop'
+  pod 'libpag'
 
   # Pods for XLAnimationDemo
 

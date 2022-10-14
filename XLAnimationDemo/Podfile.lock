@@ -1,16 +1,24 @@
 PODS:
+  - libpag (4.1.13)
   - lottie-ios (2.5.3)
+  - pop (1.0.12)
 
 DEPENDENCIES:
+  - libpag
   - lottie-ios (~> 2.5.3)
+  - pop
 
 SPEC REPOS:
   trunk:
+    - libpag
     - lottie-ios
+    - pop
 
 SPEC CHECKSUMS:
+  libpag: c765dd2a0584d7dd8767601d8f0bfc38c16eca2e
   lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
 
-PODFILE CHECKSUM: 77d53593bdb57dbdc33728a61e05d6abe5812c76
+PODFILE CHECKSUM: 7d6b7ac062cd512a962ed5e72f7cbe77a3177df3
 
 COCOAPODS: 1.11.2

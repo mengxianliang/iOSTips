@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		5EBD36B628F6B19E00973BF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD36B528F6B19E00973BF4 /* AppDelegate.m */; };
-		5EBD36B928F6B19E00973BF4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD36B828F6B19E00973BF4 /* SceneDelegate.m */; };
 		5EBD36BC28F6B19E00973BF4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD36BB28F6B19E00973BF4 /* ViewController.m */; };
 		5EBD36BF28F6B19E00973BF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBD36BD28F6B19E00973BF4 /* Main.storyboard */; };
 		5EBD36C128F6B1A100973BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EBD36C028F6B1A100973BF4 /* Assets.xcassets */; };
 		5EBD36C428F6B1A100973BF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBD36C228F6B1A100973BF4 /* LaunchScreen.storyboard */; };
 		5EBD36C728F6B1A100973BF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD36C628F6B1A100973BF4 /* main.m */; };
-		5EBD36CE28F6B51800973BF4 /* NoSignal.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EBD36CD28F6B51800973BF4 /* NoSignal.json */; };
-		5EBD36D228F6BCFC00973BF4 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD36D128F6BCFC00973BF4 /* ViewController2.m */; };
-		5EBD36D428F6BFED00973BF4 /* Loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EBD36D328F6BFED00973BF4 /* Loading.json */; };
 		5EBD36E928F7EE4000973BF4 /* vcTransition1.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EBD36E728F7EE3F00973BF4 /* vcTransition1.json */; };
 		5EBD36EA28F7EE4000973BF4 /* vcTransition2.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EBD36E828F7EE4000973BF4 /* vcTransition2.json */; };
+		5EBD36F928F8EC2800973BF4 /* PAGDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD36F828F8EC2800973BF4 /* PAGDemoViewController.m */; };
+		5EBD36FC28F8EC3D00973BF4 /* LottieDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD36FB28F8EC3D00973BF4 /* LottieDemoViewController.m */; };
+		5EBD36FF28F8EC4900973BF4 /* POPDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD36FE28F8EC4900973BF4 /* POPDemoViewController.m */; };
+		5EBD370228F8ED1C00973BF4 /* TransitionDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD370128F8ED1C00973BF4 /* TransitionDemoViewController.m */; };
+		5EBD370628F8F0F800973BF4 /* Watermelon.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EBD370428F8F0F800973BF4 /* Watermelon.json */; };
+		5EBD370928F8F9EB00973BF4 /* 18.pag in Resources */ = {isa = PBXBuildFile; fileRef = 5EBD370828F8F88E00973BF4 /* 18.pag */; };
 		F5B91049831FBAED3E0D85FE /* Pods_XLAnimationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE49C24AD9D8A32AB56D7410 /* Pods_XLAnimationDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,8 +28,6 @@
 		5EBD36B128F6B19E00973BF4 /* XLAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EBD36B428F6B19E00973BF4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5EBD36B528F6B19E00973BF4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5EBD36B728F6B19E00973BF4 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		5EBD36B828F6B19E00973BF4 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		5EBD36BA28F6B19E00973BF4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5EBD36BB28F6B19E00973BF4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5EBD36BE28F6B19E00973BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,12 +35,18 @@
 		5EBD36C328F6B1A100973BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EBD36C528F6B1A100973BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EBD36C628F6B1A100973BF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5EBD36CD28F6B51800973BF4 /* NoSignal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NoSignal.json; sourceTree = "<group>"; };
-		5EBD36D028F6BCFC00973BF4 /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
-		5EBD36D128F6BCFC00973BF4 /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
-		5EBD36D328F6BFED00973BF4 /* Loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Loading.json; sourceTree = "<group>"; };
 		5EBD36E728F7EE3F00973BF4 /* vcTransition1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition1.json; sourceTree = "<group>"; };
 		5EBD36E828F7EE4000973BF4 /* vcTransition2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vcTransition2.json; sourceTree = "<group>"; };
+		5EBD36F728F8EC2800973BF4 /* PAGDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAGDemoViewController.h; sourceTree = "<group>"; };
+		5EBD36F828F8EC2800973BF4 /* PAGDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PAGDemoViewController.m; sourceTree = "<group>"; };
+		5EBD36FA28F8EC3D00973BF4 /* LottieDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LottieDemoViewController.h; sourceTree = "<group>"; };
+		5EBD36FB28F8EC3D00973BF4 /* LottieDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LottieDemoViewController.m; sourceTree = "<group>"; };
+		5EBD36FD28F8EC4900973BF4 /* POPDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POPDemoViewController.h; sourceTree = "<group>"; };
+		5EBD36FE28F8EC4900973BF4 /* POPDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POPDemoViewController.m; sourceTree = "<group>"; };
+		5EBD370028F8ED1C00973BF4 /* TransitionDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionDemoViewController.h; sourceTree = "<group>"; };
+		5EBD370128F8ED1C00973BF4 /* TransitionDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionDemoViewController.m; sourceTree = "<group>"; };
+		5EBD370428F8F0F800973BF4 /* Watermelon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Watermelon.json; sourceTree = "<group>"; };
+		5EBD370828F8F88E00973BF4 /* 18.pag */ = {isa = PBXFileReference; lastKnownFileType = file; path = 18.pag; sourceTree = "<group>"; };
 		65423976887A15A80E791D97 /* Pods-XLAnimationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLAnimationDemo.debug.xcconfig"; path = "Target Support Files/Pods-XLAnimationDemo/Pods-XLAnimationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E717DE0E7EB3EB03CE3B24D2 /* Pods-XLAnimationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLAnimationDemo.release.xcconfig"; path = "Target Support Files/Pods-XLAnimationDemo/Pods-XLAnimationDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FE49C24AD9D8A32AB56D7410 /* Pods_XLAnimationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XLAnimationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,7 +75,9 @@
 		5EBD36A828F6B19E00973BF4 = {
 			isa = PBXGroup;
 			children = (
-				5EBD36CF28F6B52800973BF4 /* Samples */,
+				5EBD36ED28F8EB7700973BF4 /* POP */,
+				5EBD36EC28F8EB7100973BF4 /* PAG */,
+				5EBD36EB28F8EB6A00973BF4 /* Lottie */,
 				5EBD36B328F6B19E00973BF4 /* XLAnimationDemo */,
 				5EBD36B228F6B19E00973BF4 /* Products */,
 				AD2D022510E5D457B8601649 /* Pods */,
@@ -90,12 +98,8 @@
 			children = (
 				5EBD36B428F6B19E00973BF4 /* AppDelegate.h */,
 				5EBD36B528F6B19E00973BF4 /* AppDelegate.m */,
-				5EBD36B728F6B19E00973BF4 /* SceneDelegate.h */,
-				5EBD36B828F6B19E00973BF4 /* SceneDelegate.m */,
 				5EBD36BA28F6B19E00973BF4 /* ViewController.h */,
 				5EBD36BB28F6B19E00973BF4 /* ViewController.m */,
-				5EBD36D028F6BCFC00973BF4 /* ViewController2.h */,
-				5EBD36D128F6BCFC00973BF4 /* ViewController2.m */,
 				5EBD36BD28F6B19E00973BF4 /* Main.storyboard */,
 				5EBD36C028F6B1A100973BF4 /* Assets.xcassets */,
 				5EBD36C228F6B1A100973BF4 /* LaunchScreen.storyboard */,
@@ -105,15 +109,69 @@
 			path = XLAnimationDemo;
 			sourceTree = "<group>";
 		};
-		5EBD36CF28F6B52800973BF4 /* Samples */ = {
+		5EBD36EB28F8EB6A00973BF4 /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
+				5EBD36F228F8EBE900973BF4 /* Code */,
+				5EBD36F328F8EBE900973BF4 /* Resource */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		5EBD36EC28F8EB7100973BF4 /* PAG */ = {
+			isa = PBXGroup;
+			children = (
+				5EBD36F128F8EBE600973BF4 /* Code */,
+				5EBD36F028F8EBE600973BF4 /* Resource */,
+			);
+			path = PAG;
+			sourceTree = "<group>";
+		};
+		5EBD36ED28F8EB7700973BF4 /* POP */ = {
+			isa = PBXGroup;
+			children = (
+				5EBD36FD28F8EC4900973BF4 /* POPDemoViewController.h */,
+				5EBD36FE28F8EC4900973BF4 /* POPDemoViewController.m */,
+			);
+			path = POP;
+			sourceTree = "<group>";
+		};
+		5EBD36F028F8EBE600973BF4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5EBD370828F8F88E00973BF4 /* 18.pag */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5EBD36F128F8EBE600973BF4 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				5EBD36F728F8EC2800973BF4 /* PAGDemoViewController.h */,
+				5EBD36F828F8EC2800973BF4 /* PAGDemoViewController.m */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		5EBD36F228F8EBE900973BF4 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				5EBD36FA28F8EC3D00973BF4 /* LottieDemoViewController.h */,
+				5EBD36FB28F8EC3D00973BF4 /* LottieDemoViewController.m */,
+				5EBD370028F8ED1C00973BF4 /* TransitionDemoViewController.h */,
+				5EBD370128F8ED1C00973BF4 /* TransitionDemoViewController.m */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		5EBD36F328F8EBE900973BF4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5EBD370428F8F0F800973BF4 /* Watermelon.json */,
 				5EBD36E728F7EE3F00973BF4 /* vcTransition1.json */,
 				5EBD36E828F7EE4000973BF4 /* vcTransition2.json */,
-				5EBD36D328F6BFED00973BF4 /* Loading.json */,
-				5EBD36CD28F6B51800973BF4 /* NoSignal.json */,
 			);
-			path = Samples;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		AD2D022510E5D457B8601649 /* Pods */ = {
@@ -185,12 +243,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EBD36C428F6B1A100973BF4 /* LaunchScreen.storyboard in Resources */,
+				5EBD370928F8F9EB00973BF4 /* 18.pag in Resources */,
 				5EBD36EA28F7EE4000973BF4 /* vcTransition2.json in Resources */,
 				5EBD36C128F6B1A100973BF4 /* Assets.xcassets in Resources */,
 				5EBD36BF28F6B19E00973BF4 /* Main.storyboard in Resources */,
+				5EBD370628F8F0F800973BF4 /* Watermelon.json in Resources */,
 				5EBD36E928F7EE4000973BF4 /* vcTransition1.json in Resources */,
-				5EBD36CE28F6B51800973BF4 /* NoSignal.json in Resources */,
-				5EBD36D428F6BFED00973BF4 /* Loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,10 +302,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EBD36BC28F6B19E00973BF4 /* ViewController.m in Sources */,
+				5EBD36FC28F8EC3D00973BF4 /* LottieDemoViewController.m in Sources */,
 				5EBD36B628F6B19E00973BF4 /* AppDelegate.m in Sources */,
-				5EBD36D228F6BCFC00973BF4 /* ViewController2.m in Sources */,
+				5EBD36F928F8EC2800973BF4 /* PAGDemoViewController.m in Sources */,
+				5EBD36FF28F8EC4900973BF4 /* POPDemoViewController.m in Sources */,
+				5EBD370228F8ED1C00973BF4 /* TransitionDemoViewController.m in Sources */,
 				5EBD36C728F6B1A100973BF4 /* main.m in Sources */,
-				5EBD36B928F6B19E00973BF4 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
